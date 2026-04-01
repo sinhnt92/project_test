@@ -3,6 +3,13 @@
 Chào mừng bạn đến với ứng dụng quản lý sách hoàn chỉnh. Đây là công cụ phục vụ mục đích học tập và thực hành Python với các tính năng chuyên nghiệp, giao diện trực quan và cấu trúc modular dễ bảo trì.
 
 ## 📁 Cấu trúc thư mục
+Dự án hiện tại được chia thành các package:
+app/core/: Chứa cấu hình cốt lõi (Database).
+app/services/: Chứa logic xử lý (BookService, UserService, OrderService).
+app/ui/views/: Chứa các màn hình giao diện riêng biệt.
+data/: Thư mục an toàn để lưu trữ cơ sở dữ liệu SQLite.
+main.py: Tệp khởi chạy chính tại thư mục gốc.
+
 Dự án được chia thành các tệp tin chuyên biệt:
 - **`main.py`**: Điểm khởi đầu của ứng dụng, quản lý chuyển đổi màn hình và tính năng "Hot Reload".
 - **`db_config.py`**: Cấu hình và khởi tạo cơ sở dữ liệu SQLite.
